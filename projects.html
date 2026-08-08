@@ -115,7 +115,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
             <!-- Project 1: Personal Portfolio -->
             <div class="project-card glass-card rounded-3xl overflow-hidden group flex flex-col justify-between h-full glow-hover transition-all duration-500 border border-white/10" data-category="web">
                 <div>
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-geist font-bold text-on-surface text-xl mb-2 group-hover:text-primary transition-colors">Personal Portfolio</h3>
+                        <h3 class="font-space font-bold text-on-surface text-2xl mb-2 group-hover:text-primary transition-colors">Personal Portfolio Website</h3>
                         <p class="text-on-surface-variant font-inter text-sm leading-relaxed">
                             A sleek, modern portfolio website showcasing skills, experience, and projects using high-end UI patterns and glassmorphic aesthetics.
                         </p>
@@ -138,10 +138,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="px-6 pb-6 pt-2 border-t border-white/5 flex justify-between items-center">
-                    <span class="font-mono text-xs text-secondary font-semibold">Live Site</span>
-                    <button onclick="openProjectModal('portfolio')" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors">
-                        <span class="material-symbols-outlined text-base">arrow_outward</span>
+                <div class="px-6 pb-6 pt-3 border-t border-white/5 flex flex-wrap items-center justify-between gap-3">
+                    <div class="flex items-center gap-3">
+                        <a href="https://kishanstudio.vercel.app/" target="_blank" rel="noopener" class="bg-primary/20 hover:bg-primary text-primary hover:text-on-primary font-mono text-xs font-semibold px-4 py-2 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Live Demo</span>
+                            <span class="material-symbols-outlined text-xs">open_in_new</span>
+                        </a>
+                        <a href="https://github.com/Kishan-devflow/KISHANSTUDIO" target="_blank" rel="noopener" class="border border-white/10 hover:bg-white/10 text-on-surface font-mono text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-xs">code</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <button onclick="openProjectModal('portfolio')" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors">
+                        <span class="material-symbols-outlined text-sm">info</span>
                     </button>
                 </div>
             </div>
@@ -157,7 +166,7 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-geist font-bold text-on-surface text-xl mb-2 group-hover:text-secondary transition-colors">Amazon Clone</h3>
+                        <h3 class="font-space font-bold text-on-surface text-2xl mb-2 group-hover:text-secondary transition-colors">Amazon Clone</h3>
                         <p class="text-on-surface-variant font-inter text-sm leading-relaxed">
                             A full-stack e-commerce platform mimicking core functionalities of Amazon, including user authentication, interactive cart, and product search.
                         </p>
@@ -168,10 +177,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="px-6 pb-6 pt-2 border-t border-white/5 flex justify-between items-center">
-                    <span class="font-mono text-xs text-secondary font-semibold">Web App</span>
-                    <button onclick="openProjectModal('amazon')" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-secondary hover:text-on-secondary transition-colors">
-                        <span class="material-symbols-outlined text-base">arrow_outward</span>
+                <div class="px-6 pb-6 pt-3 border-t border-white/5 flex flex-wrap items-center justify-between gap-3">
+                    <div class="flex items-center gap-3">
+                        <a href="https://amazonclone-rust-three.vercel.app/" target="_blank" rel="noopener" class="bg-secondary/20 hover:bg-secondary text-secondary hover:text-on-secondary font-mono text-xs font-semibold px-4 py-2 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Live Demo</span>
+                            <span class="material-symbols-outlined text-xs">open_in_new</span>
+                        </a>
+                        <a href="https://github.com/Kishan-devflow/amazonclone" target="_blank" rel="noopener" class="border border-white/10 hover:bg-white/10 text-on-surface font-mono text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-xs">code</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <button onclick="openProjectModal('amazon')" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-secondary hover:text-on-secondary transition-colors">
+                        <span class="material-symbols-outlined text-sm">info</span>
                     </button>
                 </div>
             </div>
@@ -187,7 +205,7 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-geist font-bold text-on-surface text-xl mb-2 group-hover:text-tertiary transition-colors">Netflix Clone</h3>
+                        <h3 class="font-space font-bold text-on-surface text-2xl mb-2 group-hover:text-tertiary transition-colors">Netflix Clone</h3>
                         <p class="text-on-surface-variant font-inter text-sm leading-relaxed">
                             A responsive frontend replica of Netflix browsing interface utilizing TMDB API to fetch live trending movies, trailers, and categories.
                         </p>
@@ -198,10 +216,58 @@
                         </div>
                     </div>
                 </div>
-                <div class="px-6 pb-6 pt-2 border-t border-white/5 flex justify-between items-center">
-                    <span class="font-mono text-xs text-secondary font-semibold">Web App</span>
-                    <button onclick="openProjectModal('netflix')" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-tertiary hover:text-on-tertiary transition-colors">
-                        <span class="material-symbols-outlined text-base">arrow_outward</span>
+                <div class="px-6 pb-6 pt-3 border-t border-white/5 flex flex-wrap items-center justify-between gap-3">
+                    <div class="flex items-center gap-3">
+                        <a href="https://netflix-clone-rocket-30.vercel.app/" target="_blank" rel="noopener" class="bg-red-500/20 hover:bg-red-500 text-red-400 hover:text-white font-mono text-xs font-semibold px-4 py-2 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Live Demo</span>
+                            <span class="material-symbols-outlined text-xs">open_in_new</span>
+                        </a>
+                        <a href="https://github.com/Kishan-devflow/netflix-clone" target="_blank" rel="noopener" class="border border-white/10 hover:bg-white/10 text-on-surface font-mono text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-xs">code</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <button onclick="openProjectModal('netflix')" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-tertiary hover:text-on-tertiary transition-colors">
+                        <span class="material-symbols-outlined text-sm">info</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 4: Web Calculator -->
+            <div class="project-card glass-card rounded-3xl overflow-hidden group flex flex-col justify-between h-full glow-hover transition-all duration-500 border border-white/10" data-category="web">
+                <div>
+                    <div class="h-52 bg-surface-container-high relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-tertiary/30 via-surface-container-high to-transparent opacity-80"></div>
+                        <span class="material-symbols-outlined text-7xl text-tertiary/40 group-hover:scale-110 group-hover:text-tertiary/70 transition-all duration-500 z-10">calculate</span>
+                        <div class="absolute top-4 right-4 bg-surface-container-lowest/80 backdrop-blur-md font-mono text-xs text-tertiary px-3.5 py-1 rounded-full border border-tertiary/30 z-10">
+                            Web App
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-space font-bold text-on-surface text-2xl mb-2 group-hover:text-tertiary transition-colors">Web Calculator</h3>
+                        <p class="text-on-surface-variant font-inter text-sm leading-relaxed">
+                            A sleek, responsive web calculator application supporting arithmetic operations, keyboard inputs, operator memory, and glassmorphic button feedback.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="bg-surface-container px-3 py-1 rounded-full font-mono text-xs text-on-surface-variant">JavaScript</span>
+                            <span class="bg-surface-container px-3 py-1 rounded-full font-mono text-xs text-on-surface-variant">HTML5</span>
+                            <span class="bg-surface-container px-3 py-1 rounded-full font-mono text-xs text-on-surface-variant">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-3 border-t border-white/5 flex flex-wrap items-center justify-between gap-3">
+                    <div class="flex items-center gap-3">
+                        <a href="https://web-calculator-orpin.vercel.app/" target="_blank" rel="noopener" class="bg-tertiary/20 hover:bg-tertiary text-tertiary hover:text-on-tertiary font-mono text-xs font-semibold px-4 py-2 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Live Demo</span>
+                            <span class="material-symbols-outlined text-xs">open_in_new</span>
+                        </a>
+                        <a href="https://github.com/Kishan-devflow/web-calculator" target="_blank" rel="noopener" class="border border-white/10 hover:bg-white/10 text-on-surface font-mono text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-xs">code</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <button onclick="openProjectModal('calculator')" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-tertiary hover:text-on-tertiary transition-colors">
+                        <span class="material-symbols-outlined text-sm">info</span>
                     </button>
                 </div>
             </div>
