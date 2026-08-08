@@ -305,7 +305,7 @@ function handleContactSubmit(e) {
 /* Project Detail Modal Content Generator */
 const projectData = {
     portfolio: {
-        title: "Personal Portfolio",
+        title: "Personal Portfolio Website",
         category: "Web Engineering / UI",
         tech: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "Glassmorphism"],
         description: "A state-of-the-art personal showcase constructed following the Lumina Engineering design system specifications. Designed with deep-space palette tokens, glassmorphism containers, responsive bento grids, and interactive micro-animations.",
@@ -316,7 +316,9 @@ const projectData = {
             "Responsive layout adapted for desktop, tablet, and mobile displays"
         ],
         icon: "person_pin",
-        color: "text-primary"
+        color: "text-primary",
+        liveUrl: "https://kishanstudio.vercel.app/",
+        githubUrl: "https://github.com/Kishan-devflow/KISHANSTUDIO"
     },
     amazon: {
         title: "Amazon Clone",
@@ -330,7 +332,9 @@ const projectData = {
             "Responsive product card grid with hover zoom previews"
         ],
         icon: "shopping_cart",
-        color: "text-secondary"
+        color: "text-secondary",
+        liveUrl: "https://amazonclone-rust-three.vercel.app/",
+        githubUrl: "https://github.com/Kishan-devflow/amazonclone"
     },
     netflix: {
         title: "Netflix Clone",
@@ -344,7 +348,25 @@ const projectData = {
             "Interactive video modal playback overlay"
         ],
         icon: "movie",
-        color: "text-red-400"
+        color: "text-red-400",
+        liveUrl: "https://netflix-clone-rocket-30.vercel.app/",
+        githubUrl: "https://github.com/Kishan-devflow/netflix-clone"
+    },
+    calculator: {
+        title: "Web Calculator",
+        category: "Web Application",
+        tech: ["JavaScript", "HTML5", "CSS3", "UI Design"],
+        description: "A sleek, responsive web calculator application supporting arithmetic operations, keyboard inputs, operator memory, and glassmorphic button feedback.",
+        features: [
+            "Real-time expression evaluation and arithmetic operations",
+            "Keyboard accessibility and tap target optimizations",
+            "Clean dark glassmorphism UI layout",
+            "Responsive execution across mobile and desktop devices"
+        ],
+        icon: "calculate",
+        color: "text-tertiary",
+        liveUrl: "https://web-calculator-orpin.vercel.app/",
+        githubUrl: "https://github.com/Kishan-devflow/web-calculator"
     }
 };
 
@@ -357,7 +379,7 @@ function openProjectModal(key) {
         <div class="flex items-center gap-3 mb-4">
             <span class="material-symbols-outlined text-4xl ${data.color}">${data.icon}</span>
             <div>
-                <h3 class="font-geist text-2xl font-bold text-on-surface">${data.title}</h3>
+                <h3 class="font-space text-2xl font-bold text-on-surface">${data.title}</h3>
                 <p class="font-mono text-xs text-secondary">${data.category}</p>
             </div>
         </div>
@@ -380,12 +402,16 @@ function openProjectModal(key) {
             </div>
         </div>
 
-        <div class="flex gap-3">
-            <button onclick="showToast('Demo link preview clicked!', 'launch'); closeModal('project-modal');" class="flex-1 bg-gradient-to-r from-primary to-secondary text-on-primary font-mono text-xs font-semibold py-3 rounded-xl flex items-center justify-center gap-2">
-                <span>View Live Project</span>
+        <div class="flex flex-wrap gap-3">
+            <a href="${data.liveUrl}" target="_blank" rel="noopener" class="flex-1 bg-gradient-to-r from-primary to-secondary text-on-primary font-mono text-xs font-semibold py-3 rounded-xl flex items-center justify-center gap-2 hover:shadow-[0_0_20px_rgba(139,92,246,0.5)] transition-all">
+                <span>Live Demo</span>
                 <span class="material-symbols-outlined text-sm">open_in_new</span>
-            </button>
-            <button onclick="closeModal('project-modal')" class="px-6 border border-white/10 text-on-surface font-mono text-xs rounded-xl hover:bg-white/5 transition-colors">
+            </a>
+            <a href="${data.githubUrl}" target="_blank" rel="noopener" class="px-5 border border-white/10 text-on-surface font-mono text-xs rounded-xl hover:bg-white/5 transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm">code</span>
+                <span>GitHub</span>
+            </a>
+            <button onclick="closeModal('project-modal')" class="px-5 border border-white/10 text-on-surface-variant font-mono text-xs rounded-xl hover:bg-white/5 transition-colors">
                 Close
             </button>
         </div>
