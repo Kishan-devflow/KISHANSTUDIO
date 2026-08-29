@@ -958,6 +958,125 @@
       </div>
       <!-- END PROJECT GRID -->
     </main>
+    ```html
+<!-- ================================================= -->
+<!-- PROJECT 8 - FLIPTICK -->
+<!-- ================================================= -->
+
+<div
+  class="project-card glass-card rounded-3xl overflow-hidden group flex flex-col justify-between h-full glow-hover transition-all duration-500 border border-white/10"
+  data-category="frontend"
+>
+  <div>
+    <div
+      class="h-52 bg-surface-container-high relative overflow-hidden flex items-center justify-center"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-cyan-500/30 via-surface-container-high to-transparent opacity-80"
+      ></div>
+
+      <span
+        class="material-symbols-outlined text-7xl text-cyan-400/40 group-hover:scale-110 group-hover:text-cyan-400/70 transition-all duration-500 z-10"
+      >
+        schedule
+      </span>
+
+      <div
+        class="absolute top-4 right-4 bg-surface-container-lowest/80 backdrop-blur-md font-mono text-xs text-cyan-400 px-3.5 py-1 rounded-full border border-cyan-400/30 z-10"
+      >
+        Frontend
+      </div>
+    </div>
+
+    <div class="p-6">
+      <h3
+        class="font-space font-bold text-on-surface text-2xl mb-2 group-hover:text-cyan-400 transition-colors"
+      >
+        FlipTick
+      </h3>
+
+      <p
+        class="text-on-surface-variant font-inter text-sm leading-relaxed"
+      >
+        A modern and interactive flip clock website with smooth animations,
+        customizable themes, date and time display, and a clean responsive
+        interface designed for a stylish timekeeping experience.
+      </p>
+
+      <div class="flex flex-wrap gap-2 mt-4">
+        <span
+          class="bg-surface-container px-3 py-1 rounded-full font-mono text-xs text-on-surface-variant"
+        >
+          HTML
+        </span>
+
+        <span
+          class="bg-surface-container px-3 py-1 rounded-full font-mono text-xs text-on-surface-variant"
+        >
+          CSS
+        </span>
+
+        <span
+          class="bg-surface-container px-3 py-1 rounded-full font-mono text-xs text-on-surface-variant"
+        >
+          JavaScript
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="px-6 pb-6 pt-3 border-t border-white/5 flex flex-wrap items-center justify-between gap-3"
+  >
+    <div class="flex items-center gap-3">
+      <a
+        href="https://flip-tick.vercel.app/"
+        target="_blank"
+        rel="noopener"
+        class="bg-cyan-500/20 hover:bg-cyan-500 text-cyan-400 hover:text-white font-mono text-xs font-semibold px-4 py-2 rounded-xl transition-all flex items-center gap-1.5"
+      >
+        Live Demo
+
+        <span class="material-symbols-outlined text-xs">
+          open_in_new
+        </span>
+      </a>
+
+      <a
+        href="https://github.com/Kishan-devflow/FlipTick"
+        target="_blank"
+        rel="noopener"
+        class="border border-white/10 hover:bg-white/10 text-on-surface font-mono text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5"
+      >
+        <span class="material-symbols-outlined text-xs">
+          code
+        </span>
+        GitHub
+      </a>
+    </div>
+
+    <button
+      onclick="openFlipTickDetails()"
+      class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-cyan-500 hover:text-white transition-colors"
+    >
+      <span class="material-symbols-outlined text-sm">
+        info
+      </span>
+    </button>
+  </div>
+</div>
+
+<!-- END PROJECT 8 - FLIPTICK -->
+```
+
+Also add this JavaScript function if your **Info** button uses a modal like MythicHQ:
+
+```javascript
+function openFlipTickDetails() {
+  // Add your FlipTick details modal logic here
+}
+```
+
 
     <!-- ============================= -->
     <!-- FOOTER -->
